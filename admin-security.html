@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Security log · Admin · Dr. Tony Chartouny</title>
+  <link rel="icon" href="static/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="static/css/app.css">
+  
+</head>
+<body class="admin-body">
+  <div class="admin-mobile-bar">
+    <button class="btn btn-sm" type="button" data-admin-menu aria-controls="admin-side" aria-expanded="false"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 6h16M4 12h16M4 18h16"/></svg><span class="sr-only">Menu</span></button>
+    <strong>Admin</strong>
+  </div>
+
+  <div class="admin-shell">
+    <aside class="admin-side" id="admin-side">
+      <a class="brand" href="admin.html">
+        <span class="brand-mark">TC</span>
+        <span class="brand-text"><span class="brand-name">Dr. Tony Chartouny</span><span class="brand-sub">Admin dashboard</span></span>
+      </a>
+      <nav class="admin-nav" aria-label="Admin">
+        <a href="admin.html" class=""><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 21h18"/><path d="M6 17v-5M11 17V7M16 17v-8M21 17V4"/></svg> Dashboard</a>
+        <a href="admin-videos.html" class=""><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="13" height="14" rx="2"/><path d="M16 10l5-3v10l-5-3"/></svg> Lectures</a>
+        <a href="admin-payments.html" class=""><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M7 15h3"/></svg> Payments</a>
+        <a href="admin-students.html" class=""><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.5 3-5.5 6.5-5.5s6.5 2 6.5 5.5"/><path d="M16 4.6a3.5 3.5 0 0 1 0 6.8"/><path d="M18 14.8c2.1.6 3.5 2.4 3.5 5.2"/></svg> Students</a>
+        <a href="admin-security.html" class="is-active"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg> Security log</a>
+        <div class="admin-nav-label">Site</div>
+        <a href="home.html" target="_blank" rel="noopener"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 4h6v6M20 4l-9 9"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg> View website</a>
+        <a href="account.html"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="7.5" cy="15.5" r="4.5"/><path d="M10.7 12.3L20 3M17 6l3 3M14.5 8.5l2 2"/></svg> My password</a>
+      </nav>
+      <div class="admin-side-foot">
+        <div class="user-chip"><span class="avatar">TC</span> Dr. Tony Chartouny</div>
+        <form method="get" action="index.html">
+          <input type="hidden" name="_csrf" value="preview">
+          <button class="btn btn-sm" type="submit"><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h3"/><path d="M16 17l5-5-5-5"/><path d="M21 12H9"/></svg> Sign out</button>
+        </form>
+      </div>
+    </aside>
+
+    <div class="admin-main">
+      
+      <div class="admin-top">
+        <div>
+          <h1>Security log</h1>
+          <p>Sign-ins, blocked attacks, suspected downloads, payments and every admin action. Kept for 12 months.</p>
+        </div>
+        <div class="row"></div>
+      </div>
+      <div class="admin-content">
+        
+        
+<form class="toolbar" method="get" action="admin-security.html">
+  <div class="search-input"><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg><input class="input" name="q" value="" placeholder="Event, IP address or email"></div>
+  <select class="input" name="level" data-autosubmit>
+    <option value="">All events</option>
+    <option value="warn" >Warnings & alerts</option>
+    <option value="alert" >Alerts only</option>
+  </select>
+  <button class="btn" type="submit">Filter</button>
+  
+</form>
+
+<div class="card">
+  
+  <div class="table-wrap">
+    <table class="table">
+      <thead><tr><th>Time</th><th>Event</th><th>User</th><th>IP address</th><th>Level</th></tr></thead>
+      <tbody>
+        
+        <tr class="level-alert">
+          <td class="nowrap muted">01 Oct 2026, 12:46</td>
+          <td><strong>Possible video download attempt (throttled)</strong>
+  
+  <div class="event-details">
+    <span>video: <b>3</b></span><span>throttledRequests: <b>24</b></span>
+  </div>
+  
+</td>
+          <td>
+            
+              <a href="admin-student.html">Omar Fayad</a>
+              <div class="cell-sub">omar.fayad@example.com</div>
+            
+          </td>
+          <td class="mono nowrap">185.97.12.44</td>
+          <td>
+  <span class="badge badge-danger"><svg class="icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10.3 3.9L2.4 18a2 2 0 0 0 1.7 3h15.8a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg> Alert</span>
+  
+</td>
+        </tr>
+        
+        <tr class="level-warn">
+          <td class="nowrap muted">01 Oct 2026, 12:13</td>
+          <td><strong>Failed sign-in attempt</strong>
+  
+  <div class="event-details">
+    <span>email: <b>maya.saad@example.com</b></span>
+  </div>
+  
+</td>
+          <td>
+            
+              <a href="admin-student.html">Maya Saad</a>
+              <div class="cell-sub">maya.saad@example.com</div>
+            
+          </td>
+          <td class="mono nowrap">94.187.3.10</td>
+          <td>
+  <span class="badge badge-warning"><svg class="icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10.3 3.9L2.4 18a2 2 0 0 0 1.7 3h15.8a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg> Warning</span>
+  
+</td>
+        </tr>
+        
+        <tr class="level-info">
+          <td class="nowrap muted">01 Oct 2026, 10:55</td>
+          <td><strong>Payment confirmed — lecture unlocked</strong>
+  
+  <div class="event-details">
+    <span>amount: <b>750</b></span>
+  </div>
+  
+</td>
+          <td>
+            
+              <a href="admin-student.html">Rita Khoury</a>
+              <div class="cell-sub">rita.khoury@example.com</div>
+            
+          </td>
+          <td class="mono nowrap">178.135.8.2</td>
+          <td>
+  <span class="badge"><svg class="icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg> Info</span>
+</td>
+        </tr>
+        
+        <tr class="level-alert">
+          <td class="nowrap muted">01 Oct 2026, 09:55</td>
+          <td><strong>Account locked after failed attempts</strong>
+  
+  <div class="event-details">
+    <span>failedAttempts: <b>5</b></span>
+  </div>
+  
+</td>
+          <td>
+            
+              <a href="admin-student.html">Elie Nassar</a>
+              <div class="cell-sub">elie.nassar@example.com</div>
+            
+          </td>
+          <td class="mono nowrap">91.232.100.7</td>
+          <td>
+  <span class="badge badge-danger"><svg class="icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10.3 3.9L2.4 18a2 2 0 0 0 1.7 3h15.8a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg> Alert</span>
+  
+</td>
+        </tr>
+        
+        <tr class="level-warn">
+          <td class="nowrap muted">01 Oct 2026, 07:55</td>
+          <td><strong>Blocked forged/expired form submission</strong>
+  
+  <div class="event-details">
+    <span>path: <b>/login</b></span><span>origin: <b>https://evil.example</b></span>
+  </div>
+  
+</td>
+          <td>
+            <span class="muted">—</span>
+          </td>
+          <td class="mono nowrap">45.83.64.1</td>
+          <td>
+  <span class="badge badge-warning"><svg class="icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10.3 3.9L2.4 18a2 2 0 0 0 1.7 3h15.8a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg> Warning</span>
+  
+</td>
+        </tr>
+        
+        <tr class="level-info">
+          <td class="nowrap muted">01 Oct 2026, 06:55</td>
+          <td><strong>Lecture uploaded</strong>
+  
+  <div class="event-details">
+    <span>title: <b>Haematology: Anaemias</b></span>
+  </div>
+  
+</td>
+          <td>
+            
+              Dr. Tony Chartouny <span class="badge">Admin</span>
+              <div class="cell-sub">doctor@example.com</div>
+            
+          </td>
+          <td class="mono nowrap">178.135.1.1</td>
+          <td>
+  <span class="badge"><svg class="icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg> Info</span>
+</td>
+        </tr>
+        
+        <tr class="level-warn">
+          <td class="nowrap muted">01 Oct 2026, 04:55</td>
+          <td><strong>Forged payment callback rejected</strong>
+  
+  <div class="event-details">
+    <span>payment: <b>forged</b></span>
+  </div>
+  
+</td>
+          <td>
+            <span class="muted">—</span>
+          </td>
+          <td class="mono nowrap">102.36.4.9</td>
+          <td>
+  <span class="badge badge-warning"><svg class="icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10.3 3.9L2.4 18a2 2 0 0 0 1.7 3h15.8a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg> Warning</span>
+  
+</td>
+        </tr>
+        
+        <tr class="level-info">
+          <td class="nowrap muted">30 Sept 2026, 10:55</td>
+          <td><strong>Signed in</strong>
+  
+  <div class="event-details">
+    <span>mfa: <b>true</b></span>
+  </div>
+  
+</td>
+          <td>
+            
+              Dr. Tony Chartouny <span class="badge">Admin</span>
+              <div class="cell-sub">doctor@example.com</div>
+            
+          </td>
+          <td class="mono nowrap">178.135.1.1</td>
+          <td>
+  <span class="badge"><svg class="icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg> Info</span>
+</td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </div>
+  
+  
+
+  
+</div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="static/js/app.js" defer></script>
+  <script src="static/js/admin.js" defer></script>
+  
+<a class="preview-badge" href="screens.html">Static preview · all screens</a>
+</body>
+</html>

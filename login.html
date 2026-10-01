@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign in · Dr. Tony Chartouny</title>
+  <meta name="description" content="Recorded lectures and teaching sessions">
+  <meta name="theme-color" content="#0b1a33">
+  <link rel="icon" href="static/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="static/css/app.css">
+  
+</head>
+<body class="">
+  
+  <a class="sr-only" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">TC</span>
+        <span class="brand-text">
+          <span class="brand-name">Dr. Tony Chartouny</span>
+          <span class="brand-sub">Recorded lectures and teaching sessions</span>
+        </span>
+      </a>
+
+      <button class="btn btn-ghost nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" data-nav-toggle>
+        <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 6h16M4 12h16M4 18h16"/></svg><span class="sr-only">Menu</span>
+      </button>
+
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <a class="nav-link is-active" href="index.html#lectures"><svg class="icon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg> Lectures</a>
+        
+          <span class="nav-sep" aria-hidden="true"></span>
+          <a class="nav-link " href="login.html">Sign in</a>
+          <a class="btn btn-primary" href="register.html">Create account</a>
+        
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    
+    
+<div class="auth-wrap">
+  <div class="card auth-card">
+    <div class="card-pad">
+      <div class="auth-icon"><svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6 8-6s8 2 8 6"/></svg></div>
+      <h1>Welcome back</h1>
+      <p class="sub">Sign in to watch your unlocked lectures.</p>
+
+      
+
+      <form method="get" action="home.html" novalidate>
+        <input type="hidden" name="_csrf" value="preview">
+        
+        <div class="field">
+          <label for="email">Email</label>
+          <input class="input" id="email" name="email" type="email" autocomplete="username" required maxlength="254" value="" autofocus>
+        </div>
+        <div class="field">
+          <label for="password">Password</label>
+          <input class="input" id="password" name="password" type="password" autocomplete="current-password" required maxlength="128">
+        </div>
+        <button class="btn btn-primary btn-lg btn-block mt-1" type="submit" data-busy-text="Signing in…">Sign in</button>
+      </form>
+      <p class="auth-alt">New here? <a href="register.html">Create an account</a></p>
+      <p class="auth-alt mt-0"><small>Forgot your password? Contact the administrator to reset it.</small></p>
+    </div>
+  </div>
+</div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>© 2026 Dr. Tony Chartouny. All rights reserved.</div>
+      <div class="footer-secure"><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg> Encrypted streaming · Secure checkout · Access for 48 hours per unlock</div>
+    </div>
+  </footer>
+
+  <script src="static/js/app.js" defer></script>
+  
+<a class="preview-badge" href="screens.html">Static preview · all screens</a>
+</body>
+</html>

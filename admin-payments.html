@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Payments · Admin · Dr. Tony Chartouny</title>
+  <link rel="icon" href="static/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="static/css/app.css">
+  
+</head>
+<body class="admin-body">
+  <div class="admin-mobile-bar">
+    <button class="btn btn-sm" type="button" data-admin-menu aria-controls="admin-side" aria-expanded="false"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 6h16M4 12h16M4 18h16"/></svg><span class="sr-only">Menu</span></button>
+    <strong>Admin</strong>
+  </div>
+
+  <div class="admin-shell">
+    <aside class="admin-side" id="admin-side">
+      <a class="brand" href="admin.html">
+        <span class="brand-mark">TC</span>
+        <span class="brand-text"><span class="brand-name">Dr. Tony Chartouny</span><span class="brand-sub">Admin dashboard</span></span>
+      </a>
+      <nav class="admin-nav" aria-label="Admin">
+        <a href="admin.html" class=""><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 21h18"/><path d="M6 17v-5M11 17V7M16 17v-8M21 17V4"/></svg> Dashboard</a>
+        <a href="admin-videos.html" class=""><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="13" height="14" rx="2"/><path d="M16 10l5-3v10l-5-3"/></svg> Lectures</a>
+        <a href="admin-payments.html" class="is-active"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M7 15h3"/></svg> Payments</a>
+        <a href="admin-students.html" class=""><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.5 3-5.5 6.5-5.5s6.5 2 6.5 5.5"/><path d="M16 4.6a3.5 3.5 0 0 1 0 6.8"/><path d="M18 14.8c2.1.6 3.5 2.4 3.5 5.2"/></svg> Students</a>
+        <a href="admin-security.html" class=""><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg> Security log</a>
+        <div class="admin-nav-label">Site</div>
+        <a href="home.html" target="_blank" rel="noopener"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 4h6v6M20 4l-9 9"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg> View website</a>
+        <a href="account.html"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="7.5" cy="15.5" r="4.5"/><path d="M10.7 12.3L20 3M17 6l3 3M14.5 8.5l2 2"/></svg> My password</a>
+      </nav>
+      <div class="admin-side-foot">
+        <div class="user-chip"><span class="avatar">TC</span> Dr. Tony Chartouny</div>
+        <form method="get" action="index.html">
+          <input type="hidden" name="_csrf" value="preview">
+          <button class="btn btn-sm" type="submit"><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h3"/><path d="M16 17l5-5-5-5"/><path d="M21 12H9"/></svg> Sign out</button>
+        </form>
+      </div>
+    </aside>
+
+    <div class="admin-main">
+      
+      <div class="admin-top">
+        <div>
+          <h1>Payments</h1>
+          <p>Every checkout attempt. A payment unlocks a lecture only after the provider confirms it server-to-server.</p>
+        </div>
+        <div class="row"></div>
+      </div>
+      <div class="admin-content">
+        
+        
+<form class="toolbar" method="get" action="admin-payments.html">
+  <div class="search-input"><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg><input class="input" name="q" value="" placeholder="Student, email, phone, lecture or reference"></div>
+  <select class="input" name="status" data-autosubmit>
+    <option value="">All statuses</option>
+    <option value="paid" >Paid</option><option value="pending" >Pending</option><option value="failed" >Failed</option><option value="expired" >Expired</option>
+  </select>
+  <button class="btn" type="submit">Filter</button>
+  
+  <span class="grow"></span>
+  <span class="muted">134 payments · <strong class="tabular">$777.00</strong> collected</span>
+</form>
+
+<div class="card">
+  
+  <div class="table-wrap">
+    <table class="table">
+      <thead><tr><th>Date</th><th>Student</th><th>Lecture</th><th class="num">Amount</th><th>Status</th><th>Reference</th><th></th></tr></thead>
+      <tbody>
+        
+        <tr>
+          <td class="nowrap">30 Sept 2026, 09:55<div class="cell-sub">Paid 30 Sept 2026, 09:56</div></td>
+          <td><a class="cell-title" href="admin-student.html">Karim Haddad</a><div class="cell-sub">karim.haddad@example.com</div></td>
+          <td>Respiratory Physiology</td>
+          <td class="num">$5.00</td>
+          <td>
+  <span class="badge badge-success"><svg class="icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> Paid</span>
+  
+</td>
+          <td><span class="mono">1790751329992000</span><div class="cell-sub">whish · +96170100031</div></td>
+          <td class="text-right">
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="nowrap">30 Sept 2026, 09:08<div class="cell-sub">Paid 30 Sept 2026, 09:09</div></td>
+          <td><a class="cell-title" href="admin-student.html">Maya Saad</a><div class="cell-sub">maya.saad@example.com</div></td>
+          <td>Renal Function &amp; Acid–Base Balance</td>
+          <td class="num">$6.00</td>
+          <td>
+  <span class="badge badge-success"><svg class="icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> Paid</span>
+  
+</td>
+          <td><span class="mono">1790748509992001</span><div class="cell-sub">whish · +96170100032</div></td>
+          <td class="text-right">
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="nowrap">30 Sept 2026, 08:21<div class="cell-sub">Paid 30 Sept 2026, 08:22</div></td>
+          <td><a class="cell-title" href="admin-student.html">Elie Nassar</a><div class="cell-sub">elie.nassar@example.com</div></td>
+          <td>Neurology: The Cranial Nerves</td>
+          <td class="num">$7.50</td>
+          <td>
+  <span class="badge badge-success"><svg class="icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> Paid</span>
+  
+</td>
+          <td><span class="mono">1790745689992002</span><div class="cell-sub">whish · +96170100033</div></td>
+          <td class="text-right">
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="nowrap">30 Sept 2026, 07:34<div class="cell-sub">Paid 30 Sept 2026, 07:35</div></td>
+          <td><a class="cell-title" href="admin-student.html">Lea Moussa</a><div class="cell-sub">lea.moussa@example.com</div></td>
+          <td>Endocrinology Essentials</td>
+          <td class="num">$6.00</td>
+          <td>
+  <span class="badge badge-success"><svg class="icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> Paid</span>
+  
+</td>
+          <td><span class="mono">1790742869992003</span><div class="cell-sub">whish · +96170100034</div></td>
+          <td class="text-right">
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="nowrap">30 Sept 2026, 06:47<div class="cell-sub">Paid 30 Sept 2026, 06:48</div></td>
+          <td><a class="cell-title" href="admin-student.html">Jad Frem</a><div class="cell-sub">jad.frem@example.com</div></td>
+          <td>Pharmacology: Antibiotics</td>
+          <td class="num">$5.00</td>
+          <td>
+  <span class="badge badge-danger"><svg class="icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18"/></svg> Failed</span>
+</td>
+          <td><span class="mono">1790740049992004</span><div class="cell-sub">whish · +96170100035</div></td>
+          <td class="text-right">
+            
+            <form method="get" action="admin-payments.html" class="inline-form">
+              <input type="hidden" name="_csrf" value="preview">
+              <input type="hidden" name="back" value="/admin/payments?page=1">
+              <button class="btn btn-sm" type="submit" title="Ask the payment provider for the latest status"><svg class="icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 11a8 8 0 0 0-14.9-3M4 4v4h4"/><path d="M4 13a8 8 0 0 0 14.9 3M20 20v-4h-4"/></svg> Re-check</button>
+            </form>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="nowrap">30 Sept 2026, 06:00<div class="cell-sub">Paid 30 Sept 2026, 06:01</div></td>
+          <td><a class="cell-title" href="admin-student.html">Nour Hajj</a><div class="cell-sub">nour.hajj@example.com</div></td>
+          <td>Introduction to Cardiology</td>
+          <td class="num">$7.50</td>
+          <td>
+  <span class="badge badge-success"><svg class="icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> Paid</span>
+  
+</td>
+          <td><span class="mono">1790737229992005</span><div class="cell-sub">whish · +96170100036</div></td>
+          <td class="text-right">
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="nowrap">30 Sept 2026, 05:13<div class="cell-sub">Paid 30 Sept 2026, 05:14</div></td>
+          <td><a class="cell-title" href="admin-student.html">Carla Aoun</a><div class="cell-sub">carla.aoun@example.com</div></td>
+          <td>Respiratory Physiology</td>
+          <td class="num">$5.00</td>
+          <td>
+  <span class="badge badge-success"><svg class="icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> Paid</span>
+  
+</td>
+          <td><span class="mono">1790734409992006</span><div class="cell-sub">whish · +96170100037</div></td>
+          <td class="text-right">
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="nowrap">29 Sept 2026, 09:55<div class="cell-sub">Paid 29 Sept 2026, 09:56</div></td>
+          <td><a class="cell-title" href="admin-student.html">Maya Saad</a><div class="cell-sub">maya.saad@example.com</div></td>
+          <td>Renal Function &amp; Acid–Base Balance</td>
+          <td class="num">$6.00</td>
+          <td>
+  <span class="badge badge-success"><svg class="icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> Paid</span>
+  
+</td>
+          <td><span class="mono">1790664929992000</span><div class="cell-sub">whish · +96170100062</div></td>
+          <td class="text-right">
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="nowrap">29 Sept 2026, 09:08<div class="cell-sub">Paid 29 Sept 2026, 09:09</div></td>
+          <td><a class="cell-title" href="admin-student.html">Elie Nassar</a><div class="cell-sub">elie.nassar@example.com</div></td>
+          <td>Neurology: The Cranial Nerves</td>
+          <td class="num">$7.50</td>
+          <td>
+  <span class="badge badge-success"><svg class="icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> Paid</span>
+  
+</td>
+          <td><span class="mono">1790662109992001</span><div class="cell-sub">whish · +96170100063</div></td>
+          <td class="text-right">
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="nowrap">29 Sept 2026, 08:21<div class="cell-sub">Paid 29 Sept 2026, 08:22</div></td>
+          <td><a class="cell-title" href="admin-student.html">Lea Moussa</a><div class="cell-sub">lea.moussa@example.com</div></td>
+          <td>Endocrinology Essentials</td>
+          <td class="num">$6.00</td>
+          <td>
+  <span class="badge badge-success"><svg class="icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> Paid</span>
+  
+</td>
+          <td><span class="mono">1790659289992002</span><div class="cell-sub">whish · +96170100064</div></td>
+          <td class="text-right">
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="nowrap">29 Sept 2026, 07:34<div class="cell-sub">Paid 29 Sept 2026, 07:35</div></td>
+          <td><a class="cell-title" href="admin-student.html">Jad Frem</a><div class="cell-sub">jad.frem@example.com</div></td>
+          <td>Pharmacology: Antibiotics</td>
+          <td class="num">$5.00</td>
+          <td>
+  <span class="badge badge-danger"><svg class="icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18"/></svg> Failed</span>
+</td>
+          <td><span class="mono">1790656469992003</span><div class="cell-sub">whish · +96170100065</div></td>
+          <td class="text-right">
+            
+            <form method="get" action="admin-payments.html" class="inline-form">
+              <input type="hidden" name="_csrf" value="preview">
+              <input type="hidden" name="back" value="/admin/payments?page=1">
+              <button class="btn btn-sm" type="submit" title="Ask the payment provider for the latest status"><svg class="icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 11a8 8 0 0 0-14.9-3M4 4v4h4"/><path d="M4 13a8 8 0 0 0 14.9 3M20 20v-4h-4"/></svg> Re-check</button>
+            </form>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="nowrap">29 Sept 2026, 06:47<div class="cell-sub">Paid 29 Sept 2026, 06:48</div></td>
+          <td><a class="cell-title" href="admin-student.html">Nour Hajj</a><div class="cell-sub">nour.hajj@example.com</div></td>
+          <td>Introduction to Cardiology</td>
+          <td class="num">$7.50</td>
+          <td>
+  <span class="badge badge-success"><svg class="icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> Paid</span>
+  
+</td>
+          <td><span class="mono">1790653649992004</span><div class="cell-sub">whish · +96170100066</div></td>
+          <td class="text-right">
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="nowrap">29 Sept 2026, 06:00<div class="cell-sub">Paid 29 Sept 2026, 06:01</div></td>
+          <td><a class="cell-title" href="admin-student.html">Carla Aoun</a><div class="cell-sub">carla.aoun@example.com</div></td>
+          <td>Respiratory Physiology</td>
+          <td class="num">$5.00</td>
+          <td>
+  <span class="badge badge-success"><svg class="icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> Paid</span>
+  
+</td>
+          <td><span class="mono">1790650829992005</span><div class="cell-sub">whish · +96170100067</div></td>
+          <td class="text-right">
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="nowrap">29 Sept 2026, 05:13<div class="cell-sub">Paid 29 Sept 2026, 05:14</div></td>
+          <td><a class="cell-title" href="admin-student.html">Omar Fayad</a><div class="cell-sub">omar.fayad@example.com</div></td>
+          <td>Renal Function &amp; Acid–Base Balance</td>
+          <td class="num">$6.00</td>
+          <td>
+  <span class="badge badge-success"><svg class="icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> Paid</span>
+  
+</td>
+          <td><span class="mono">1790648009992006</span><div class="cell-sub">whish · +96170100068</div></td>
+          <td class="text-right">
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="nowrap">28 Sept 2026, 09:55<div class="cell-sub">Paid 28 Sept 2026, 09:56</div></td>
+          <td><a class="cell-title" href="admin-student.html">Elie Nassar</a><div class="cell-sub">elie.nassar@example.com</div></td>
+          <td>Neurology: The Cranial Nerves</td>
+          <td class="num">$7.50</td>
+          <td>
+  <span class="badge badge-success"><svg class="icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> Paid</span>
+  
+</td>
+          <td><span class="mono">1790578529992000</span><div class="cell-sub">whish · +96170100093</div></td>
+          <td class="text-right">
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="nowrap">28 Sept 2026, 09:08<div class="cell-sub">Paid 28 Sept 2026, 09:09</div></td>
+          <td><a class="cell-title" href="admin-student.html">Lea Moussa</a><div class="cell-sub">lea.moussa@example.com</div></td>
+          <td>Endocrinology Essentials</td>
+          <td class="num">$6.00</td>
+          <td>
+  <span class="badge badge-success"><svg class="icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> Paid</span>
+  
+</td>
+          <td><span class="mono">1790575709992001</span><div class="cell-sub">whish · +96170100094</div></td>
+          <td class="text-right">
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="nowrap">28 Sept 2026, 08:21<div class="cell-sub">Paid 28 Sept 2026, 08:22</div></td>
+          <td><a class="cell-title" href="admin-student.html">Jad Frem</a><div class="cell-sub">jad.frem@example.com</div></td>
+          <td>Pharmacology: Antibiotics</td>
+          <td class="num">$5.00</td>
+          <td>
+  <span class="badge badge-danger"><svg class="icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18"/></svg> Failed</span>
+</td>
+          <td><span class="mono">1790572889992002</span><div class="cell-sub">whish · +96170100095</div></td>
+          <td class="text-right">
+            
+            <form method="get" action="admin-payments.html" class="inline-form">
+              <input type="hidden" name="_csrf" value="preview">
+              <input type="hidden" name="back" value="/admin/payments?page=1">
+              <button class="btn btn-sm" type="submit" title="Ask the payment provider for the latest status"><svg class="icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 11a8 8 0 0 0-14.9-3M4 4v4h4"/><path d="M4 13a8 8 0 0 0 14.9 3M20 20v-4h-4"/></svg> Re-check</button>
+            </form>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="nowrap">28 Sept 2026, 07:34<div class="cell-sub">Paid 28 Sept 2026, 07:35</div></td>
+          <td><a class="cell-title" href="admin-student.html">Nour Hajj</a><div class="cell-sub">nour.hajj@example.com</div></td>
+          <td>Introduction to Cardiology</td>
+          <td class="num">$7.50</td>
+          <td>
+  <span class="badge badge-success"><svg class="icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> Paid</span>
+  
+</td>
+          <td><span class="mono">1790570069992003</span><div class="cell-sub">whish · +96170100096</div></td>
+          <td class="text-right">
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="nowrap">28 Sept 2026, 06:47<div class="cell-sub">Paid 28 Sept 2026, 06:48</div></td>
+          <td><a class="cell-title" href="admin-student.html">Carla Aoun</a><div class="cell-sub">carla.aoun@example.com</div></td>
+          <td>Respiratory Physiology</td>
+          <td class="num">$5.00</td>
+          <td>
+  <span class="badge badge-success"><svg class="icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> Paid</span>
+  
+</td>
+          <td><span class="mono">1790567249992004</span><div class="cell-sub">whish · +96170100097</div></td>
+          <td class="text-right">
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="nowrap">28 Sept 2026, 06:00<div class="cell-sub">Paid 28 Sept 2026, 06:01</div></td>
+          <td><a class="cell-title" href="admin-student.html">Omar Fayad</a><div class="cell-sub">omar.fayad@example.com</div></td>
+          <td>Renal Function &amp; Acid–Base Balance</td>
+          <td class="num">$6.00</td>
+          <td>
+  <span class="badge badge-success"><svg class="icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> Paid</span>
+  
+</td>
+          <td><span class="mono">1790564429992005</span><div class="cell-sub">whish · +96170100098</div></td>
+          <td class="text-right">
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="nowrap">27 Sept 2026, 09:55<div class="cell-sub">Paid 27 Sept 2026, 09:56</div></td>
+          <td><a class="cell-title" href="admin-student.html">Lea Moussa</a><div class="cell-sub">lea.moussa@example.com</div></td>
+          <td>Endocrinology Essentials</td>
+          <td class="num">$6.00</td>
+          <td>
+  <span class="badge badge-success"><svg class="icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> Paid</span>
+  
+</td>
+          <td><span class="mono">1790492129992000</span><div class="cell-sub">whish · +96170100124</div></td>
+          <td class="text-right">
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="nowrap">27 Sept 2026, 09:08<div class="cell-sub">Paid 27 Sept 2026, 09:09</div></td>
+          <td><a class="cell-title" href="admin-student.html">Jad Frem</a><div class="cell-sub">jad.frem@example.com</div></td>
+          <td>Pharmacology: Antibiotics</td>
+          <td class="num">$5.00</td>
+          <td>
+  <span class="badge badge-danger"><svg class="icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18"/></svg> Failed</span>
+</td>
+          <td><span class="mono">1790489309992001</span><div class="cell-sub">whish · +96170100125</div></td>
+          <td class="text-right">
+            
+            <form method="get" action="admin-payments.html" class="inline-form">
+              <input type="hidden" name="_csrf" value="preview">
+              <input type="hidden" name="back" value="/admin/payments?page=1">
+              <button class="btn btn-sm" type="submit" title="Ask the payment provider for the latest status"><svg class="icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 11a8 8 0 0 0-14.9-3M4 4v4h4"/><path d="M4 13a8 8 0 0 0 14.9 3M20 20v-4h-4"/></svg> Re-check</button>
+            </form>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="nowrap">27 Sept 2026, 08:21<div class="cell-sub">Paid 27 Sept 2026, 08:22</div></td>
+          <td><a class="cell-title" href="admin-student.html">Nour Hajj</a><div class="cell-sub">nour.hajj@example.com</div></td>
+          <td>Introduction to Cardiology</td>
+          <td class="num">$7.50</td>
+          <td>
+  <span class="badge badge-success"><svg class="icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> Paid</span>
+  
+</td>
+          <td><span class="mono">1790486489992002</span><div class="cell-sub">whish · +96170100126</div></td>
+          <td class="text-right">
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="nowrap">27 Sept 2026, 07:34<div class="cell-sub">Paid 27 Sept 2026, 07:35</div></td>
+          <td><a class="cell-title" href="admin-student.html">Carla Aoun</a><div class="cell-sub">carla.aoun@example.com</div></td>
+          <td>Respiratory Physiology</td>
+          <td class="num">$5.00</td>
+          <td>
+  <span class="badge badge-success"><svg class="icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> Paid</span>
+  
+</td>
+          <td><span class="mono">1790483669992003</span><div class="cell-sub">whish · +96170100127</div></td>
+          <td class="text-right">
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="nowrap">27 Sept 2026, 06:47<div class="cell-sub">Paid 27 Sept 2026, 06:48</div></td>
+          <td><a class="cell-title" href="admin-student.html">Omar Fayad</a><div class="cell-sub">omar.fayad@example.com</div></td>
+          <td>Renal Function &amp; Acid–Base Balance</td>
+          <td class="num">$6.00</td>
+          <td>
+  <span class="badge badge-success"><svg class="icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> Paid</span>
+  
+</td>
+          <td><span class="mono">1790480849992004</span><div class="cell-sub">whish · +96170100128</div></td>
+          <td class="text-right">
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="nowrap">26 Sept 2026, 09:55<div class="cell-sub">Paid 26 Sept 2026, 09:56</div></td>
+          <td><a class="cell-title" href="admin-student.html">Jad Frem</a><div class="cell-sub">jad.frem@example.com</div></td>
+          <td>Pharmacology: Antibiotics</td>
+          <td class="num">$5.00</td>
+          <td>
+  <span class="badge badge-danger"><svg class="icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18"/></svg> Failed</span>
+</td>
+          <td><span class="mono">1790405729992000</span><div class="cell-sub">whish · +96170100155</div></td>
+          <td class="text-right">
+            
+            <form method="get" action="admin-payments.html" class="inline-form">
+              <input type="hidden" name="_csrf" value="preview">
+              <input type="hidden" name="back" value="/admin/payments?page=1">
+              <button class="btn btn-sm" type="submit" title="Ask the payment provider for the latest status"><svg class="icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 11a8 8 0 0 0-14.9-3M4 4v4h4"/><path d="M4 13a8 8 0 0 0 14.9 3M20 20v-4h-4"/></svg> Re-check</button>
+            </form>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="nowrap">26 Sept 2026, 09:08<div class="cell-sub">Paid 26 Sept 2026, 09:09</div></td>
+          <td><a class="cell-title" href="admin-student.html">Nour Hajj</a><div class="cell-sub">nour.hajj@example.com</div></td>
+          <td>Introduction to Cardiology</td>
+          <td class="num">$7.50</td>
+          <td>
+  <span class="badge badge-success"><svg class="icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> Paid</span>
+  
+</td>
+          <td><span class="mono">1790402909992001</span><div class="cell-sub">whish · +96170100156</div></td>
+          <td class="text-right">
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="nowrap">26 Sept 2026, 08:21<div class="cell-sub">Paid 26 Sept 2026, 08:22</div></td>
+          <td><a class="cell-title" href="admin-student.html">Carla Aoun</a><div class="cell-sub">carla.aoun@example.com</div></td>
+          <td>Respiratory Physiology</td>
+          <td class="num">$5.00</td>
+          <td>
+  <span class="badge badge-success"><svg class="icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> Paid</span>
+  
+</td>
+          <td><span class="mono">1790400089992002</span><div class="cell-sub">whish · +96170100157</div></td>
+          <td class="text-right">
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="nowrap">26 Sept 2026, 07:34<div class="cell-sub">Paid 26 Sept 2026, 07:35</div></td>
+          <td><a class="cell-title" href="admin-student.html">Omar Fayad</a><div class="cell-sub">omar.fayad@example.com</div></td>
+          <td>Renal Function &amp; Acid–Base Balance</td>
+          <td class="num">$6.00</td>
+          <td>
+  <span class="badge badge-success"><svg class="icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> Paid</span>
+  
+</td>
+          <td><span class="mono">1790397269992003</span><div class="cell-sub">whish · +96170100158</div></td>
+          <td class="text-right">
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="nowrap">26 Sept 2026, 06:47<div class="cell-sub">Paid 26 Sept 2026, 06:48</div></td>
+          <td><a class="cell-title" href="admin-student.html">Yara Daher</a><div class="cell-sub">yara.daher@example.com</div></td>
+          <td>Neurology: The Cranial Nerves</td>
+          <td class="num">$7.50</td>
+          <td>
+  <span class="badge badge-success"><svg class="icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> Paid</span>
+  
+</td>
+          <td><span class="mono">1790394449992004</span><div class="cell-sub">whish · +96170100159</div></td>
+          <td class="text-right">
+            
+          </td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </div>
+  
+  
+  <div class="pagination">
+    <span>Page 1 of 5 · 134 total</span>
+    <div class="row">
+      
+      <a class="btn btn-sm" href="?page=2">Next <svg class="icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+  
+
+  
+</div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="static/js/app.js" defer></script>
+  <script src="static/js/admin.js" defer></script>
+  
+<a class="preview-badge" href="screens.html">Static preview · all screens</a>
+</body>
+</html>

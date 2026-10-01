@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Students · Admin · Dr. Tony Chartouny</title>
+  <link rel="icon" href="static/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="static/css/app.css">
+  
+</head>
+<body class="admin-body">
+  <div class="admin-mobile-bar">
+    <button class="btn btn-sm" type="button" data-admin-menu aria-controls="admin-side" aria-expanded="false"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 6h16M4 12h16M4 18h16"/></svg><span class="sr-only">Menu</span></button>
+    <strong>Admin</strong>
+  </div>
+
+  <div class="admin-shell">
+    <aside class="admin-side" id="admin-side">
+      <a class="brand" href="admin.html">
+        <span class="brand-mark">TC</span>
+        <span class="brand-text"><span class="brand-name">Dr. Tony Chartouny</span><span class="brand-sub">Admin dashboard</span></span>
+      </a>
+      <nav class="admin-nav" aria-label="Admin">
+        <a href="admin.html" class=""><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 21h18"/><path d="M6 17v-5M11 17V7M16 17v-8M21 17V4"/></svg> Dashboard</a>
+        <a href="admin-videos.html" class=""><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="13" height="14" rx="2"/><path d="M16 10l5-3v10l-5-3"/></svg> Lectures</a>
+        <a href="admin-payments.html" class=""><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M7 15h3"/></svg> Payments</a>
+        <a href="admin-students.html" class="is-active"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.5 3-5.5 6.5-5.5s6.5 2 6.5 5.5"/><path d="M16 4.6a3.5 3.5 0 0 1 0 6.8"/><path d="M18 14.8c2.1.6 3.5 2.4 3.5 5.2"/></svg> Students</a>
+        <a href="admin-security.html" class=""><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg> Security log</a>
+        <div class="admin-nav-label">Site</div>
+        <a href="home.html" target="_blank" rel="noopener"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 4h6v6M20 4l-9 9"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg> View website</a>
+        <a href="account.html"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="7.5" cy="15.5" r="4.5"/><path d="M10.7 12.3L20 3M17 6l3 3M14.5 8.5l2 2"/></svg> My password</a>
+      </nav>
+      <div class="admin-side-foot">
+        <div class="user-chip"><span class="avatar">TC</span> Dr. Tony Chartouny</div>
+        <form method="get" action="index.html">
+          <input type="hidden" name="_csrf" value="preview">
+          <button class="btn btn-sm" type="submit"><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h3"/><path d="M16 17l5-5-5-5"/><path d="M21 12H9"/></svg> Sign out</button>
+        </form>
+      </div>
+    </aside>
+
+    <div class="admin-main">
+      
+      <div class="admin-top">
+        <div>
+          <h1>Students</h1>
+          <p>Registered students, what they bought and what they can watch right now.</p>
+        </div>
+        <div class="row"></div>
+      </div>
+      <div class="admin-content">
+        
+        
+<form class="toolbar" method="get" action="admin-students.html">
+  <div class="search-input"><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg><input class="input" name="q" value="" placeholder="Name, email or phone"></div>
+  <select class="input" name="status" data-autosubmit>
+    <option value="">All accounts</option>
+    <option value="active" >Active</option>
+    <option value="disabled" >Disabled</option>
+  </select>
+  <button class="btn" type="submit">Search</button>
+  
+</form>
+
+<div class="card">
+  
+  <div class="table-wrap">
+    <table class="table">
+      <thead><tr><th>Student</th><th>Phone</th><th class="num">Purchases</th><th class="num">Spent</th><th class="num">Unlocked now</th><th>Joined</th><th>Last sign-in</th><th></th></tr></thead>
+      <tbody>
+        
+        <tr>
+          <td><a class="cell-title" href="admin-student.html">Rita Khoury</a><div class="cell-sub">rita.khoury@example.com</div></td>
+          <td class="nowrap">+96171000000</td>
+          <td class="num">12</td>
+          <td class="num">$76.80</td>
+          <td class="num">0</td>
+          <td class="muted nowrap">02 Aug 2026</td>
+          <td class="muted nowrap">01 Oct 2026, 12:55</td>
+          <td class="text-right"><a class="btn btn-sm" href="admin-student.html">Manage</a></td>
+        </tr>
+        
+        <tr>
+          <td><a class="cell-title" href="admin-student.html">Karim Haddad</a><div class="cell-sub">karim.haddad@example.com</div></td>
+          <td class="nowrap">+96171007919</td>
+          <td class="num">11</td>
+          <td class="num">$70.40</td>
+          <td class="num">1</td>
+          <td class="muted nowrap">07 Aug 2026</td>
+          <td class="muted nowrap">01 Oct 2026, 05:55</td>
+          <td class="text-right"><a class="btn btn-sm" href="admin-student.html">Manage</a></td>
+        </tr>
+        
+        <tr>
+          <td><a class="cell-title" href="admin-student.html">Maya Saad</a><div class="cell-sub">maya.saad@example.com</div></td>
+          <td class="nowrap">+96171015838</td>
+          <td class="num">10</td>
+          <td class="num">$64.00</td>
+          <td class="num">2</td>
+          <td class="muted nowrap">12 Aug 2026</td>
+          <td class="muted nowrap">30 Sept 2026, 22:55</td>
+          <td class="text-right"><a class="btn btn-sm" href="admin-student.html">Manage</a></td>
+        </tr>
+        
+        <tr>
+          <td><a class="cell-title" href="admin-student.html">Elie Nassar</a><div class="cell-sub">elie.nassar@example.com</div></td>
+          <td class="nowrap">+96171023757</td>
+          <td class="num">9</td>
+          <td class="num">$57.60</td>
+          <td class="num">0</td>
+          <td class="muted nowrap">17 Aug 2026</td>
+          <td class="muted nowrap">30 Sept 2026, 15:55</td>
+          <td class="text-right"><a class="btn btn-sm" href="admin-student.html">Manage</a></td>
+        </tr>
+        
+        <tr>
+          <td><a class="cell-title" href="admin-student.html">Lea Moussa</a><div class="cell-sub">lea.moussa@example.com</div></td>
+          <td class="nowrap">+96171031676</td>
+          <td class="num">8</td>
+          <td class="num">$51.20</td>
+          <td class="num">1</td>
+          <td class="muted nowrap">22 Aug 2026</td>
+          <td class="muted nowrap">30 Sept 2026, 08:55</td>
+          <td class="text-right"><a class="btn btn-sm" href="admin-student.html">Manage</a></td>
+        </tr>
+        
+        <tr>
+          <td><a class="cell-title" href="admin-student.html">Jad Frem</a><div class="cell-sub">jad.frem@example.com</div></td>
+          <td class="nowrap">+96171039595</td>
+          <td class="num">7</td>
+          <td class="num">$44.80</td>
+          <td class="num">2</td>
+          <td class="muted nowrap">27 Aug 2026</td>
+          <td class="muted nowrap">30 Sept 2026, 01:55</td>
+          <td class="text-right"><a class="btn btn-sm" href="admin-student.html">Manage</a></td>
+        </tr>
+        
+        <tr>
+          <td><a class="cell-title" href="admin-student.html">Nour Hajj</a><div class="cell-sub">nour.hajj@example.com</div></td>
+          <td class="nowrap">+96171047514</td>
+          <td class="num">6</td>
+          <td class="num">$38.40</td>
+          <td class="num">0</td>
+          <td class="muted nowrap">01 Sept 2026</td>
+          <td class="muted nowrap">29 Sept 2026, 18:55</td>
+          <td class="text-right"><a class="btn btn-sm" href="admin-student.html">Manage</a></td>
+        </tr>
+        
+        <tr>
+          <td><a class="cell-title" href="admin-student.html">Carla Aoun</a><div class="cell-sub">carla.aoun@example.com</div></td>
+          <td class="nowrap">+96171055433</td>
+          <td class="num">5</td>
+          <td class="num">$32.00</td>
+          <td class="num">1</td>
+          <td class="muted nowrap">06 Sept 2026</td>
+          <td class="muted nowrap">29 Sept 2026, 11:55</td>
+          <td class="text-right"><a class="btn btn-sm" href="admin-student.html">Manage</a></td>
+        </tr>
+        
+        <tr>
+          <td><a class="cell-title" href="admin-student.html">Omar Fayad</a><div class="cell-sub">omar.fayad@example.com</div></td>
+          <td class="nowrap">+96171063352</td>
+          <td class="num">4</td>
+          <td class="num">$25.60</td>
+          <td class="num">2</td>
+          <td class="muted nowrap">11 Sept 2026</td>
+          <td class="muted nowrap">29 Sept 2026, 04:55</td>
+          <td class="text-right"><span class="badge badge-danger">Disabled</span></td>
+        </tr>
+        
+        <tr>
+          <td><a class="cell-title" href="admin-student.html">Yara Daher</a><div class="cell-sub">yara.daher@example.com</div></td>
+          <td class="nowrap">+96171071271</td>
+          <td class="num">3</td>
+          <td class="num">$19.20</td>
+          <td class="num">0</td>
+          <td class="muted nowrap">16 Sept 2026</td>
+          <td class="muted nowrap">28 Sept 2026, 21:55</td>
+          <td class="text-right"><a class="btn btn-sm" href="admin-student.html">Manage</a></td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </div>
+  
+  
+  <div class="pagination">
+    <span>Page 1 of 8 · 214 total</span>
+    <div class="row">
+      
+      <a class="btn btn-sm" href="?page=2">Next <svg class="icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+  
+
+  
+</div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="static/js/app.js" defer></script>
+  <script src="static/js/admin.js" defer></script>
+  
+<a class="preview-badge" href="screens.html">Static preview · all screens</a>
+</body>
+</html>

@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Dashboard · Admin · Dr. Tony Chartouny</title>
+  <link rel="icon" href="static/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="static/css/app.css">
+  
+</head>
+<body class="admin-body">
+  <div class="admin-mobile-bar">
+    <button class="btn btn-sm" type="button" data-admin-menu aria-controls="admin-side" aria-expanded="false"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 6h16M4 12h16M4 18h16"/></svg><span class="sr-only">Menu</span></button>
+    <strong>Admin</strong>
+  </div>
+
+  <div class="admin-shell">
+    <aside class="admin-side" id="admin-side">
+      <a class="brand" href="admin.html">
+        <span class="brand-mark">TC</span>
+        <span class="brand-text"><span class="brand-name">Dr. Tony Chartouny</span><span class="brand-sub">Admin dashboard</span></span>
+      </a>
+      <nav class="admin-nav" aria-label="Admin">
+        <a href="admin.html" class="is-active"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 21h18"/><path d="M6 17v-5M11 17V7M16 17v-8M21 17V4"/></svg> Dashboard</a>
+        <a href="admin-videos.html" class=""><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="13" height="14" rx="2"/><path d="M16 10l5-3v10l-5-3"/></svg> Lectures</a>
+        <a href="admin-payments.html" class=""><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M7 15h3"/></svg> Payments</a>
+        <a href="admin-students.html" class=""><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.5 3-5.5 6.5-5.5s6.5 2 6.5 5.5"/><path d="M16 4.6a3.5 3.5 0 0 1 0 6.8"/><path d="M18 14.8c2.1.6 3.5 2.4 3.5 5.2"/></svg> Students</a>
+        <a href="admin-security.html" class=""><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg> Security log</a>
+        <div class="admin-nav-label">Site</div>
+        <a href="home.html" target="_blank" rel="noopener"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 4h6v6M20 4l-9 9"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg> View website</a>
+        <a href="account.html"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="7.5" cy="15.5" r="4.5"/><path d="M10.7 12.3L20 3M17 6l3 3M14.5 8.5l2 2"/></svg> My password</a>
+      </nav>
+      <div class="admin-side-foot">
+        <div class="user-chip"><span class="avatar">TC</span> Dr. Tony Chartouny</div>
+        <form method="get" action="index.html">
+          <input type="hidden" name="_csrf" value="preview">
+          <button class="btn btn-sm" type="submit"><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h3"/><path d="M16 17l5-5-5-5"/><path d="M21 12H9"/></svg> Sign out</button>
+        </form>
+      </div>
+    </aside>
+
+    <div class="admin-main">
+      
+      <div class="admin-top">
+        <div>
+          <h1>Dashboard</h1>
+          <p>Overview of sales, students and security over the last 30 days.</p>
+        </div>
+        <div class="row"><a class="btn btn-primary" href="admin-upload.html"><svg class="icon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 16V4"/><path d="M7 9l5-5 5 5"/><path d="M4 20h16"/></svg> Upload lecture</a></div>
+      </div>
+      <div class="admin-content">
+        
+        
+
+<div class="kpi-grid">
+  <div class="card kpi">
+    <div class="kpi-label"><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 7h15a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h12v3"/><circle cx="16" cy="13.5" r="1.2" fill="currentColor"/></svg> Revenue, last 30 days</div>
+    <div class="kpi-value">$777.00</div>
+    <div class="kpi-delta up">
+      +$139.86 vs previous 30 days
+    </div>
+  </div>
+  <div class="card kpi">
+    <div class="kpi-label"><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M7 15h3"/></svg> Lectures sold, last 30 days</div>
+    <div class="kpi-value">125</div>
+    <div class="kpi-delta">$2,617.00 all-time revenue</div>
+  </div>
+  <div class="card kpi">
+    <div class="kpi-label"><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 7.75-1.4"/></svg> Active unlocks now</div>
+    <div class="kpi-value">46</div>
+    <div class="kpi-delta">6 published lectures · 1 processing</div>
+  </div>
+  <div class="card kpi">
+    <div class="kpi-label"><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.5 3-5.5 6.5-5.5s6.5 2 6.5 5.5"/><path d="M16 4.6a3.5 3.5 0 0 1 0 6.8"/><path d="M18 14.8c2.1.6 3.5 2.4 3.5 5.2"/></svg> Students</div>
+    <div class="kpi-value">214</div>
+    <div class="kpi-delta up">+37 in the last 30 days</div>
+  </div>
+</div>
+
+
+<div class="stack mb-3">
+  <div class="alert alert-error"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10.3 3.9L2.4 18a2 2 0 0 0 1.7 3h15.8a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg><div><strong>2 security alerts</strong> in the last 7 days (locked accounts, suspected downloads…). <a href="admin-security.html">Review the security log</a></div></div>
+  <div class="alert alert-info"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div>1 payment waiting for confirmation — they are re-checked automatically. <a href="admin-payments.html">View</a></div></div>
+</div>
+
+
+<div class="dash-grid">
+  <div class="card">
+    <div class="card-head">
+      <h2>Daily revenue, last 30 days</h2>
+      <span class="muted">$777.00 total</span>
+    </div>
+    <div class="card-body">
+      
+        <div class="chart" id="revenue-chart" data-series="[{&quot;key&quot;:&quot;2026-09-02&quot;,&quot;label&quot;:&quot;2 Sept&quot;,&quot;revenue&quot;:3100,&quot;sales&quot;:5},{&quot;key&quot;:&quot;2026-09-03&quot;,&quot;label&quot;:&quot;3 Sept&quot;,&quot;revenue&quot;:0,&quot;sales&quot;:0},{&quot;key&quot;:&quot;2026-09-04&quot;,&quot;label&quot;:&quot;4 Sept&quot;,&quot;revenue&quot;:3100,&quot;sales&quot;:5},{&quot;key&quot;:&quot;2026-09-05&quot;,&quot;label&quot;:&quot;5 Sept&quot;,&quot;revenue&quot;:4300,&quot;sales&quot;:7},{&quot;key&quot;:&quot;2026-09-06&quot;,&quot;label&quot;:&quot;6 Sept&quot;,&quot;revenue&quot;:4800,&quot;sales&quot;:8},{&quot;key&quot;:&quot;2026-09-07&quot;,&quot;label&quot;:&quot;7 Sept&quot;,&quot;revenue&quot;:3200,&quot;sales&quot;:5},{&quot;key&quot;:&quot;2026-09-08&quot;,&quot;label&quot;:&quot;8 Sept&quot;,&quot;revenue&quot;:3700,&quot;sales&quot;:6},{&quot;key&quot;:&quot;2026-09-09&quot;,&quot;label&quot;:&quot;9 Sept&quot;,&quot;revenue&quot;:3700,&quot;sales&quot;:6},{&quot;key&quot;:&quot;2026-09-10&quot;,&quot;label&quot;:&quot;10 Sept&quot;,&quot;revenue&quot;:2500,&quot;sales&quot;:4},{&quot;key&quot;:&quot;2026-09-11&quot;,&quot;label&quot;:&quot;11 Sept&quot;,&quot;revenue&quot;:1850,&quot;sales&quot;:3},{&quot;key&quot;:&quot;2026-09-12&quot;,&quot;label&quot;:&quot;12 Sept&quot;,&quot;revenue&quot;:1850,&quot;sales&quot;:3},{&quot;key&quot;:&quot;2026-09-13&quot;,&quot;label&quot;:&quot;13 Sept&quot;,&quot;revenue&quot;:2600,&quot;sales&quot;:4},{&quot;key&quot;:&quot;2026-09-14&quot;,&quot;label&quot;:&quot;14 Sept&quot;,&quot;revenue&quot;:3100,&quot;sales&quot;:5},{&quot;key&quot;:&quot;2026-09-15&quot;,&quot;label&quot;:&quot;15 Sept&quot;,&quot;revenue&quot;:600,&quot;sales&quot;:1},{&quot;key&quot;:&quot;2026-09-16&quot;,&quot;label&quot;:&quot;16 Sept&quot;,&quot;revenue&quot;:1350,&quot;sales&quot;:2},{&quot;key&quot;:&quot;2026-09-17&quot;,&quot;label&quot;:&quot;17 Sept&quot;,&quot;revenue&quot;:0,&quot;sales&quot;:0},{&quot;key&quot;:&quot;2026-09-18&quot;,&quot;label&quot;:&quot;18 Sept&quot;,&quot;revenue&quot;:2450,&quot;sales&quot;:4},{&quot;key&quot;:&quot;2026-09-19&quot;,&quot;label&quot;:&quot;19 Sept&quot;,&quot;revenue&quot;:750,&quot;sales&quot;:1},{&quot;key&quot;:&quot;2026-09-20&quot;,&quot;label&quot;:&quot;20 Sept&quot;,&quot;revenue&quot;:1750,&quot;sales&quot;:3},{&quot;key&quot;:&quot;2026-09-21&quot;,&quot;label&quot;:&quot;21 Sept&quot;,&quot;revenue&quot;:2950,&quot;sales&quot;:5},{&quot;key&quot;:&quot;2026-09-22&quot;,&quot;label&quot;:&quot;22 Sept&quot;,&quot;revenue&quot;:3700,&quot;sales&quot;:6},{&quot;key&quot;:&quot;2026-09-23&quot;,&quot;label&quot;:&quot;23 Sept&quot;,&quot;revenue&quot;:2450,&quot;sales&quot;:4},{&quot;key&quot;:&quot;2026-09-24&quot;,&quot;label&quot;:&quot;24 Sept&quot;,&quot;revenue&quot;:1850,&quot;sales&quot;:3},{&quot;key&quot;:&quot;2026-09-25&quot;,&quot;label&quot;:&quot;25 Sept&quot;,&quot;revenue&quot;:4450,&quot;sales&quot;:7},{&quot;key&quot;:&quot;2026-09-26&quot;,&quot;label&quot;:&quot;26 Sept&quot;,&quot;revenue&quot;:4450,&quot;sales&quot;:7},{&quot;key&quot;:&quot;2026-09-27&quot;,&quot;label&quot;:&quot;27 Sept&quot;,&quot;revenue&quot;:2450,&quot;sales&quot;:4},{&quot;key&quot;:&quot;2026-09-28&quot;,&quot;label&quot;:&quot;28 Sept&quot;,&quot;revenue&quot;:3200,&quot;sales&quot;:5},{&quot;key&quot;:&quot;2026-09-29&quot;,&quot;label&quot;:&quot;29 Sept&quot;,&quot;revenue&quot;:3800,&quot;sales&quot;:6},{&quot;key&quot;:&quot;2026-09-30&quot;,&quot;label&quot;:&quot;30 Sept&quot;,&quot;revenue&quot;:3700,&quot;sales&quot;:6},{&quot;key&quot;:&quot;2026-10-01&quot;,&quot;label&quot;:&quot;1 Oct&quot;,&quot;revenue&quot;:0,&quot;sales&quot;:0}]" data-currency="USD" role="img" aria-label="Column chart of daily revenue for the last 30 days. Values are available in the table below."></div>
+      
+      <details class="table-view">
+        <summary>View as table</summary>
+        <div class="table-wrap">
+          <table class="table">
+            <thead><tr><th>Day</th><th class="num">Lectures sold</th><th class="num">Revenue</th></tr></thead>
+            <tbody>
+              <tr><td>1 Oct</td><td class="num">0</td><td class="num">$0.00</td></tr><tr><td>30 Sept</td><td class="num">6</td><td class="num">$37.00</td></tr><tr><td>29 Sept</td><td class="num">6</td><td class="num">$38.00</td></tr><tr><td>28 Sept</td><td class="num">5</td><td class="num">$32.00</td></tr><tr><td>27 Sept</td><td class="num">4</td><td class="num">$24.50</td></tr><tr><td>26 Sept</td><td class="num">7</td><td class="num">$44.50</td></tr><tr><td>25 Sept</td><td class="num">7</td><td class="num">$44.50</td></tr><tr><td>24 Sept</td><td class="num">3</td><td class="num">$18.50</td></tr><tr><td>23 Sept</td><td class="num">4</td><td class="num">$24.50</td></tr><tr><td>22 Sept</td><td class="num">6</td><td class="num">$37.00</td></tr><tr><td>21 Sept</td><td class="num">5</td><td class="num">$29.50</td></tr><tr><td>20 Sept</td><td class="num">3</td><td class="num">$17.50</td></tr><tr><td>19 Sept</td><td class="num">1</td><td class="num">$7.50</td></tr><tr><td>18 Sept</td><td class="num">4</td><td class="num">$24.50</td></tr><tr><td>17 Sept</td><td class="num">0</td><td class="num">$0.00</td></tr><tr><td>16 Sept</td><td class="num">2</td><td class="num">$13.50</td></tr><tr><td>15 Sept</td><td class="num">1</td><td class="num">$6.00</td></tr><tr><td>14 Sept</td><td class="num">5</td><td class="num">$31.00</td></tr><tr><td>13 Sept</td><td class="num">4</td><td class="num">$26.00</td></tr><tr><td>12 Sept</td><td class="num">3</td><td class="num">$18.50</td></tr><tr><td>11 Sept</td><td class="num">3</td><td class="num">$18.50</td></tr><tr><td>10 Sept</td><td class="num">4</td><td class="num">$25.00</td></tr><tr><td>9 Sept</td><td class="num">6</td><td class="num">$37.00</td></tr><tr><td>8 Sept</td><td class="num">6</td><td class="num">$37.00</td></tr><tr><td>7 Sept</td><td class="num">5</td><td class="num">$32.00</td></tr><tr><td>6 Sept</td><td class="num">8</td><td class="num">$48.00</td></tr><tr><td>5 Sept</td><td class="num">7</td><td class="num">$43.00</td></tr><tr><td>4 Sept</td><td class="num">5</td><td class="num">$31.00</td></tr><tr><td>3 Sept</td><td class="num">0</td><td class="num">$0.00</td></tr><tr><td>2 Sept</td><td class="num">5</td><td class="num">$31.00</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </details>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-head"><h2>Top lectures</h2><span class="muted">All time</span></div>
+    
+      <ul class="list-plain">
+        
+          <li>
+            <span class="row"><span class="rank">1</span><span><strong>Introduction to Cardiology</strong><br><small class="muted">22 sales</small></span></span>
+            <strong class="tabular">$165.00</strong>
+          </li>
+        
+          <li>
+            <span class="row"><span class="rank">2</span><span><strong>Neurology: The Cranial Nerves</strong><br><small class="muted">22 sales</small></span></span>
+            <strong class="tabular">$165.00</strong>
+          </li>
+        
+          <li>
+            <span class="row"><span class="rank">3</span><span><strong>Renal Function &amp; Acid–Base Balance</strong><br><small class="muted">24 sales</small></span></span>
+            <strong class="tabular">$144.00</strong>
+          </li>
+        
+          <li>
+            <span class="row"><span class="rank">4</span><span><strong>Respiratory Physiology</strong><br><small class="muted">24 sales</small></span></span>
+            <strong class="tabular">$120.00</strong>
+          </li>
+        
+          <li>
+            <span class="row"><span class="rank">5</span><span><strong>Endocrinology Essentials</strong><br><small class="muted">18 sales</small></span></span>
+            <strong class="tabular">$108.00</strong>
+          </li>
+        
+      </ul>
+    
+  </div>
+</div>
+
+<div class="dash-grid">
+  <div class="card">
+    <div class="card-head"><h2>Recent payments</h2><a href="admin-payments.html" class="btn btn-sm">View all</a></div>
+    
+    <div class="table-wrap">
+      <table class="table">
+        <thead><tr><th>Student</th><th>Lecture</th><th class="num">Amount</th><th>Status</th><th>Date</th></tr></thead>
+        <tbody>
+          
+          <tr>
+            <td class="nowrap"><a class="cell-title" href="admin-student.html">Karim Haddad</a></td>
+            <td>Respiratory Physiology</td>
+            <td class="num">$5.00</td>
+            <td>
+  <span class="badge badge-success"><svg class="icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> Paid</span>
+  
+</td>
+            <td class="muted nowrap">30 Sept 2026, 09:55</td>
+          </tr>
+          
+          <tr>
+            <td class="nowrap"><a class="cell-title" href="admin-student.html">Maya Saad</a></td>
+            <td>Renal Function &amp; Acid–Base Balance</td>
+            <td class="num">$6.00</td>
+            <td>
+  <span class="badge badge-success"><svg class="icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> Paid</span>
+  
+</td>
+            <td class="muted nowrap">30 Sept 2026, 09:08</td>
+          </tr>
+          
+          <tr>
+            <td class="nowrap"><a class="cell-title" href="admin-student.html">Elie Nassar</a></td>
+            <td>Neurology: The Cranial Nerves</td>
+            <td class="num">$7.50</td>
+            <td>
+  <span class="badge badge-success"><svg class="icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> Paid</span>
+  
+</td>
+            <td class="muted nowrap">30 Sept 2026, 08:21</td>
+          </tr>
+          
+          <tr>
+            <td class="nowrap"><a class="cell-title" href="admin-student.html">Lea Moussa</a></td>
+            <td>Endocrinology Essentials</td>
+            <td class="num">$6.00</td>
+            <td>
+  <span class="badge badge-success"><svg class="icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> Paid</span>
+  
+</td>
+            <td class="muted nowrap">30 Sept 2026, 07:34</td>
+          </tr>
+          
+          <tr>
+            <td class="nowrap"><a class="cell-title" href="admin-student.html">Jad Frem</a></td>
+            <td>Pharmacology: Antibiotics</td>
+            <td class="num">$5.00</td>
+            <td>
+  <span class="badge badge-danger"><svg class="icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18"/></svg> Failed</span>
+</td>
+            <td class="muted nowrap">30 Sept 2026, 06:47</td>
+          </tr>
+          
+          <tr>
+            <td class="nowrap"><a class="cell-title" href="admin-student.html">Nour Hajj</a></td>
+            <td>Introduction to Cardiology</td>
+            <td class="num">$7.50</td>
+            <td>
+  <span class="badge badge-success"><svg class="icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> Paid</span>
+  
+</td>
+            <td class="muted nowrap">30 Sept 2026, 06:00</td>
+          </tr>
+          
+          <tr>
+            <td class="nowrap"><a class="cell-title" href="admin-student.html">Carla Aoun</a></td>
+            <td>Respiratory Physiology</td>
+            <td class="num">$5.00</td>
+            <td>
+  <span class="badge badge-success"><svg class="icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> Paid</span>
+  
+</td>
+            <td class="muted nowrap">30 Sept 2026, 05:13</td>
+          </tr>
+          
+          <tr>
+            <td class="nowrap"><a class="cell-title" href="admin-student.html">Maya Saad</a></td>
+            <td>Renal Function &amp; Acid–Base Balance</td>
+            <td class="num">$6.00</td>
+            <td>
+  <span class="badge badge-success"><svg class="icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> Paid</span>
+  
+</td>
+            <td class="muted nowrap">29 Sept 2026, 09:55</td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+    
+  </div>
+
+  <div class="card">
+    <div class="card-head"><h2>Security events</h2><a href="admin-security.html" class="btn btn-sm">View log</a></div>
+    
+      <ul class="list-plain">
+        
+          <li>
+            <span><strong>Possible video download attempt (throttled)</strong><br><small class="muted">01 Oct 2026, 12:46 · Omar Fayad · 185.97.12.44</small></span>
+            
+  <span class="badge badge-danger"><svg class="icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10.3 3.9L2.4 18a2 2 0 0 0 1.7 3h15.8a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg> Alert</span>
+  
+
+          </li>
+        
+          <li>
+            <span><strong>Failed sign-in attempt</strong><br><small class="muted">01 Oct 2026, 12:13 · Maya Saad · 94.187.3.10</small></span>
+            
+  <span class="badge badge-warning"><svg class="icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10.3 3.9L2.4 18a2 2 0 0 0 1.7 3h15.8a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg> Warning</span>
+  
+
+          </li>
+        
+          <li>
+            <span><strong>Account locked after failed attempts</strong><br><small class="muted">01 Oct 2026, 09:55 · Elie Nassar · 91.232.100.7</small></span>
+            
+  <span class="badge badge-danger"><svg class="icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10.3 3.9L2.4 18a2 2 0 0 0 1.7 3h15.8a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg> Alert</span>
+  
+
+          </li>
+        
+          <li>
+            <span><strong>Blocked forged/expired form submission</strong><br><small class="muted">01 Oct 2026, 07:55 · 45.83.64.1</small></span>
+            
+  <span class="badge badge-warning"><svg class="icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10.3 3.9L2.4 18a2 2 0 0 0 1.7 3h15.8a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg> Warning</span>
+  
+
+          </li>
+        
+          <li>
+            <span><strong>Forged payment callback rejected</strong><br><small class="muted">01 Oct 2026, 04:55 · 102.36.4.9</small></span>
+            
+  <span class="badge badge-warning"><svg class="icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10.3 3.9L2.4 18a2 2 0 0 0 1.7 3h15.8a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg> Warning</span>
+  
+
+          </li>
+        
+      </ul>
+    
+  </div>
+</div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="static/js/app.js" defer></script>
+  <script src="static/js/admin.js" defer></script>
+  
+<a class="preview-badge" href="screens.html">Static preview · all screens</a>
+</body>
+</html>

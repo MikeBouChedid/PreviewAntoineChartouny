@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkout · Dr. Tony Chartouny</title>
+  <meta name="description" content="Recorded lectures and teaching sessions">
+  <meta name="theme-color" content="#0b1a33">
+  <link rel="icon" href="static/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="static/css/app.css">
+  
+</head>
+<body class="">
+  
+  <a class="sr-only" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="home.html">
+        <span class="brand-mark">TC</span>
+        <span class="brand-text">
+          <span class="brand-name">Dr. Tony Chartouny</span>
+          <span class="brand-sub">Recorded lectures and teaching sessions</span>
+        </span>
+      </a>
+
+      <button class="btn btn-ghost nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" data-nav-toggle>
+        <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 6h16M4 12h16M4 18h16"/></svg><span class="sr-only">Menu</span>
+      </button>
+
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <a class="nav-link is-active" href="home.html#lectures"><svg class="icon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg> Lectures</a>
+        
+          <a class="nav-link " href="library.html"><svg class="icon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 4h5a3 3 0 0 1 3 3v13a2 2 0 0 0-2-2H4z"/><path d="M20 4h-5a3 3 0 0 0-3 3v13a2 2 0 0 1 2-2h6z"/></svg> My lectures</a>
+          
+          <span class="nav-sep" aria-hidden="true"></span>
+          <a class="nav-link " href="account.html">
+            <span class="avatar">RK</span> Rita
+          </a>
+          <form class="inline-form" method="get" action="index.html">
+            <input type="hidden" name="_csrf" value="preview">
+            <button class="btn btn-ghost" type="submit" title="Sign out"><svg class="icon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h3"/><path d="M16 17l5-5-5-5"/><path d="M21 12H9"/></svg><span class="sr-only">Sign out</span></button>
+          </form>
+        
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    
+    
+<div class="container">
+  <div class="card mock-checkout">
+    <div class="card-head"><h2><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 7h15a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h12v3"/><circle cx="16" cy="13.5" r="1.2" fill="currentColor"/></svg> Test checkout</h2><span class="badge badge-warning">Simulation</span></div>
+    <div class="card-body">
+      <p class="muted">This page stands in for the real payment page while the site runs in local test mode. No money is involved.</p>
+      <ul class="summary-list">
+        <li><span>Lecture</span><span>Introduction to Cardiology</span></li>
+        <li><span>Amount</span><span>$7.50</span></li>
+        <li><span>Reference</span><span class="mono">1790844483861075</span></li>
+      </ul>
+      <form method="get" action="payment-paid.html" class="row">
+        <input type="hidden" name="_csrf" value="preview">
+        <button class="btn btn-success btn-lg grow" type="submit" name="outcome" value="pay"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> Approve payment</button>
+        <button class="btn btn-danger btn-lg grow" type="submit" name="outcome" value="decline"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18"/></svg> Decline</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>© 2026 Dr. Tony Chartouny. All rights reserved.</div>
+      <div class="footer-secure"><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg> Encrypted streaming · Secure checkout · Access for 48 hours per unlock</div>
+    </div>
+  </footer>
+
+  <script src="static/js/app.js" defer></script>
+  
+<a class="preview-badge" href="screens.html">Static preview · all screens</a>
+</body>
+</html>
